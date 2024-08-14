@@ -2,7 +2,7 @@
 name = "langchain-rag-bot"
 version = "0.1.0"
 description = ""
-authors = ["lgqnb"]
+authors = ["2481241414 <2481241414@qq.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
