@@ -15,10 +15,11 @@ from langchain_core.runnables import Runnable
 from langchain_core.messages import AIMessage, HumanMessage
 
 
-# import subprocess
+import subprocess
 
 # # 运行预先安装脚本
-# subprocess.run(["./pre-requirements.sh"], check=True)
+subprocess.run(['bash', '../pre-requirements.sh'], check=True)
+# subprocess.run(['bash', 'install_sqlite.sh'], check=True)
 
 # Init Directories
 BASE_DIR = Path(__file__).resolve().parent
