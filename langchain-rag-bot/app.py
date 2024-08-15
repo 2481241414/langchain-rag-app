@@ -14,6 +14,12 @@ from langchain.chains.retrieval import create_retrieval_chain
 from langchain_core.runnables import Runnable
 from langchain_core.messages import AIMessage, HumanMessage
 
+
+import sys
+import pysqlite3
+sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
+
+
 # Init Directories
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / 'data'
