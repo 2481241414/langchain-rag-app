@@ -4,3 +4,7 @@ cd sqlite-autoconf-3460100
 ./configure --prefix=$HOME/local
 make
 make install
+
+
+# 检查安装结果
+$HOME/local/bin/sqlite3 --version
