@@ -4,7 +4,3 @@ wget
 tar
 build-essential
 
-
-
-
-pre-requirements.sh
