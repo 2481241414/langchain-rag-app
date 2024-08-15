@@ -18,7 +18,7 @@ from langchain_core.messages import AIMessage, HumanMessage
 import subprocess
 
 # # 运行预先安装脚本
-subprocess.run(['bash', '../pre-requirements.sh'], check=True)
+subprocess.run(['bash', './pre-requirements.sh'], check=True)
 # subprocess.run(['bash', 'install_sqlite.sh'], check=True)
 
 # Init Directories
