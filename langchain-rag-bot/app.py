@@ -21,6 +21,12 @@ import subprocess
 subprocess.run(['bash', './pre-requirements.sh'], check=True)
 # subprocess.run(['bash', 'install_sqlite.sh'], check=True)
 
+import os
+# 更新环境变量以使用本地安装的SQLite
+os.environ["PATH"] = os.path.join(os.path.expanduser("~"), "local/bin") + os.pathsep + os.environ["PATH"]
+os.environ["LD_LIBRARY_PATH"] = os.path.join(os.path.expanduser("~"), "local/lib") + os.pathsep + os.environ.get("LD_LIBRARY_PATH", "")
+
+
 # Init Directories
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / 'data'
